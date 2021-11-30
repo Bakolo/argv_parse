@@ -5,8 +5,8 @@ def to_dict():
     key = ""
     for idx, item in enumater(sys.argv):
         if idx == 0:
-            main_key = sys.argv[0]
-            argv_dict.setdefault(main_key, [])
+            main_key = item
+            argv_dict.setdefault(item, [])
         else:
             if item.seartswith('-'):
                 key = item
